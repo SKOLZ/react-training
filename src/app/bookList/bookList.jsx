@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import FilterForm from './filterForm';
-import BookItem from './bookItem';
+import FilterForm from './components/filterForm/filterForm';
+import BookItem from './components/bookItem/bookItem';
+import { Link } from 'react-router-dom';
 import './books.css';
 
 class BookList extends Component {
@@ -115,7 +116,11 @@ class BookList extends Component {
 
   render () {
     const bookItems = this.state.filteredBooks.map((book) => {
-      return <BookItem key={book.id} book={book} />;
+      return (
+        <Link key={book.id} to={'/books/' + book.id}>
+          <BookItem book={book} />
+        </Link>
+      )
     });
     return (
       <div className="filtered-book-list">

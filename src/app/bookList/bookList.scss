@@ -1,4 +1,4 @@
-@import 'variables/colors.scss';
+@import 'src/stylesheets/variables/colors.scss';
 
 .books {
   display: flex;
@@ -10,7 +10,7 @@
 .book-img-wrapper {
   height: 180px;
   width: 100%;
-  background: $grey-3 url(./assets/default_book.svg) no-repeat center;
+  background: $grey-3 url('/assets/default_book.svg') no-repeat center;
 
   .book-img {
      width: 100%;

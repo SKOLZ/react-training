@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './inputs.css'
-import searchIcon from './assets/search.svg';
+import '../../../../stylesheets/inputs.css'
+import searchIcon from '../../../../assets/search.svg';
 
 class FilterForm extends Component {
   render () {

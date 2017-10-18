@@ -1,17 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './app.css'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import Dashboard from './bookList'
+import App from './app/App';
+import './app/app.css';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-render (
-  <Router history={browserHistory}>
-
-    <Route path="/dashboard" component={App}>
-      <IndexRoute component={Dashboard}/>
-    </Route>
-    <Route path="/books/:id" component={bookDetail} />
-  </Router>,
-  document.getElementById('app')
+ReactDOM.render (
+  <BrowserRouter>
+    <Route path="/" component={App} />
+  </BrowserRouter>,
+  document.getElementById('root')
 );

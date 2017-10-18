@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
-import BookList from './bookList';
+import BookList from './bookList/bookList';
+import { Route } from 'react-router-dom';
+import BookDetail from './bookDetail/bookDetail'
 
 class App extends Component {
   render () {
-    return <BookList />;
+    return (
+      <div>
+        <Route path="/dashboard" component={BookList} />
+        <Route path="/books/:id" component={BookDetail} />
+      </div>
+    );
   }
 }
 

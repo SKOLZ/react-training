@@ -1,0 +1,21 @@
+@import '../../../../stylesheets/variables/colors';
+
+.book-info-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: $black;
+  line-height: 19px;
+  text-align: left;
+}
+
+.book-info-subtitle {
+  font-size: 16px;
+  color: $grey;
+  line-height: 20px;
+}
+
+.book-info-text {
+  font-size: 14px;
+  color: $grey-4;
+  line-height: 20px;
+}
